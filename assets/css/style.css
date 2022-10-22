@@ -1,0 +1,120 @@
+/*
+  Copyright © 2022 112Tilburg.tk
+
+  Licenced under MIT
+
+  https://112tilburg.tk/
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
+div.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  min-width: 200px;
+}
+
+div.content div.left {
+  display: inline-block;
+  height: inherit;
+  width: 180px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+div.content div.left img {
+  height: 160px;
+  border-radius: 80px;
+}
+
+div.content div.right {
+  display: inline-block;
+  height: inherit;
+  width: 300px;
+  text-align: left;
+  padding: 10px;
+}
+
+div.content h1.header {
+  margin: 0;
+}
+
+div.content div.socials {
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.content div.socials a {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  margin: 0 5px;
+  transition: opacity 0.3s;
+}
+
+div.content div.socials a:hover {
+  opacity: 0.7;
+}
+
+div.content div.socials a:active {
+  opacity: 0.4;
+}
+
+div.content div.socials a.facebook {
+  background-color: #2374e1;
+  color: #fff;
+}
+
+div.content div.socials a.instagram {
+  background-color: tomato;
+  color: #fff;
+}
+
+div.content div.socials a.email {
+  background-color: slategray;
+  color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  div.content {
+    max-width: unset;
+    width: 100%;
+  }
+
+  div.content div.left {
+    display: block;
+    height: unset;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.content div.left img {
+    margin: 0 auto;
+  }
+
+  div.content div.right {
+    padding: 10px 30px;
+  }
+
+  div.content div.right h1.header {
+    text-align: center;
+  }
+
+  div.content div.right div.socials {
+    margin-top: 30px;
+  }
+}
